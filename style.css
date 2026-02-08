@@ -619,27 +619,46 @@ button{font-family:inherit}
 
 /* Modal / sheet */
 .modalBack{
-  position:fixed; inset:0;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
   background: rgba(0,0,0,.55);
   backdrop-filter: blur(10px);
-  z-index:80;
-  opacity:0;
-  pointer-events:none;
+
+  display: flex;
+  align-items: flex-start;   /* 👈 was center */
+  justify-content: center;
+
+  padding-top: 14px;         /* 👈 pushes popup near top */
+  padding-left: 14px;
+  padding-right: 14px;
+
+  opacity: 0;
+  pointer-events: none;
   transition: opacity .22s ease;
+}
+.modalBack.open{
+  opacity: 1;
+  pointer-events: auto;
 }
 .modalBack.open{ opacity:1; pointer-events:auto; }
 .modal{
-  position:fixed;
-  left:0; right:0; bottom:-720px;
-  z-index:90;
-  padding: 14px 14px calc(16px + var(--safe));
-  background: rgba(11,6,16,.94);
-  border-top: 1px solid rgba(255,255,255,.12);
-  border-radius: 22px 22px 0 0;
-  box-shadow: 0 -30px 90px rgba(0,0,0,.65);
-  transition: bottom .28s cubic-bezier(.2,.8,.2,1);
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: auto;
+
+  z-index: 90;
+  max-width: 720px;
+  width: calc(100% - 28px);
   max-height: 78vh;
-  overflow:auto;
+  overflow: auto;
+
+  border-radius: 26px;
+  background: rgba(11,6,16,.94);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 30px 90px rgba(0,0,0,.65);
 }
 .modal.open{ bottom:0; }
 .modal .grab{
