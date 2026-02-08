@@ -660,7 +660,7 @@ button{font-family:inherit}
   border: 1px solid rgba(255,255,255,.12);
   box-shadow: 0 30px 90px rgba(0,0,0,.65);
 }
-.modal.open{ bottom:0; }
+.modal.open{ }
 .modal .grab{
   width: 52px; height: 5px;
   border-radius: 999px;
@@ -680,22 +680,4 @@ button{font-family:inherit}
 .modal .mprose p{ margin: 10px 0; }
 .modal .mprose b{ color: var(--text); }
 
-/* Center modal override */
-.modalBack{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.modal{
-  position:relative;
-  bottom:auto;
-  max-width: 720px;
-  width: calc(100% - 28px);
-  max-height: 78vh;
-  border-radius: 26px;
-  animation: popIn .28s cubic-bezier(.2,.8,.2,1);
-}
-@keyframes popIn{
-  from{transform:scale(.92); opacity:0}
-  to{transform:scale(1); opacity:1}
-}
+
