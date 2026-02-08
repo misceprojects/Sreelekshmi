@@ -433,14 +433,24 @@
 
     // bind cards
     document.querySelectorAll('[data-story]').forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        const key = btn.getAttribute('data-story');
-        const tpl = document.getElementById('story_' + key);
-        if (!tpl) return;
-        open(btn.getAttribute('data-title') || "Us", tpl.innerHTML);
-      });
-    });
-  };
+  btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    e.stopPropagation();
+
+    // keep the viewport where it is (prevents “jump down” feeling)
+    const y = window.scrollY;
+
+    const key = btn.getAttribute('data-story');
+    const tpl = document.getElementById('story_' + key);
+    if (!tpl) return;
+
+    open(btn.getAttribute('data-title') || "Us", tpl.innerHTML);
+
+    // restore scroll position after opening modal
+    requestAnimationFrame(()=> window.scrollTo(0, y));
+  });
+});
+
 
 
   // Kick off
