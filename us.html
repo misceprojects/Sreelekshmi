@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#120818" />
+  <title>Us ✿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1 class="font-head">Us ✿</h1>
+          <p class="font-body">tap a chapter • read the memory</p>
+        </div>
+      </div>
+      <div class="pill">
+        <span class="dot"></span>
+        <span style="font-size:12px;color:var(--muted)">soft + true</span>
+      </div>
+    </div>
+
+    <section class="hero centered">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="glow2" aria-hidden="true"></div>
+
+      <img class="illus" src="assets/blobs.svg" alt="" aria-hidden="true" />
+
+      <div class="kicker" style="justify-content:center">
+        <svg class="heart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-7.3-4.6-9.4-9.2C.9 8 .7 5.2 3 3.4 5.3 1.6 8.2 2.3 10 4.4L12 6.7l2-2.3c1.8-2.1 4.7-2.8 7-1 2.3 1.8 2.1 4.6.4 8.4C19.3 16.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span class="font-body">some stories don’t need labels to be real</span>
+      </div>
+
+      <h2 class="font-head">A small timeline.</h2>
+      <p class="prose font-body">
+        This page is intentionally gentle. It doesn’t ask for anything.
+        It just keeps the memories warm — the way a pocket keeps a note.
+      </p>
+
+      <div class="storygrid">
+        <div class="card storycard" data-story="meet" data-title="Chapter 1 — The meeting">
+          <h3>Chapter 1 — The meeting</h3>
+          <p>Instagram. A black‑and‑white photo challenge. Then clocks stopped working.</p>
+          <div class="hint">Tap to open ✨</div>
+        </div>
+
+        <div class="card storycard" data-story="firstmeet" data-title="Chapter 2 — Pattom & violin classes">
+          <h3>Chapter 2 — Pattom & violin classes</h3>
+          <p>Waiting outside. A cheek kiss. Electricity pretending to be “casual.”</p>
+          <div class="hint">Tap to open 🎻</div>
+        </div>
+
+        <div class="card storycard" data-story="rides" data-title="Chapter 3 — Scooter rides & small forever moments">
+          <h3>Chapter 3 — Rides & small forever moments</h3>
+          <p>College gates. Bike waits. Rides just because. Silence that felt complete.</p>
+          <div class="hint">Tap to open 🛵</div>
+        </div>
+
+        <div class="card storycard" data-story="regret" data-title="Chapter 4 — The part I regret">
+          <h3>Chapter 4 — The part I regret</h3>
+          <p>Losing a diamond while thinking I had time. I didn’t.</p>
+          <div class="hint">Tap to open 🕊️</div>
+        </div>
+
+        <div class="card storycard" data-story="today" data-title="Chapter 5 — Today">
+          <h3>Chapter 5 — Today</h3>
+          <p>Wishing you happiness. Rooting for you. Staying gentle.</p>
+          <div class="hint">Tap to open 💗</div>
+        </div>
+
+        <div class="card storycard" data-story="promise" data-title="Chapter 6 — A promise (quiet, not clingy)">
+          <h3>Chapter 6 — A quiet promise</h3>
+          <p>If you’re tired, I’ll help. If you’re sad, I’ll stay. No conditions.</p>
+          <div class="hint">Tap to open 🌙</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="card" style="text-align:center">
+      <h3 class="font-head">One more thing</h3>
+      <p class="font-body" style="color:var(--muted); line-height:1.7; max-width:58ch; margin: 0 auto">
+        You are <b>precious</b>. And yes — <b>so damn hot</b> that it feels like global warming is at least partly your fault.
+        I needed you to hear it clearly. 😌
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal templates -->
+  <template id="story_meet">
+    <div class="mprose font-body">
+      <p><b>She met the idiot — me — by sheer luck.</b></p>
+      <p>If probability had a sense of humour, this was it. If I had bought a lottery ticket that year, I would have lost without question. Every ounce of luck I had was already spent simply meeting you — and somehow convincing you to stay.</p>
+      <p>It began quietly. An Instagram black‑and‑white photo challenge. A reply. Another. And then suddenly, conversations that refused to sleep.</p>
+      <p>Day blurred into night. Night into familiarity. Texts became comfort. Comfort became attachment.</p>
+      <p>That’s how it always happens — the important things never announce themselves.</p>
+    </div>
+</template>
+
+  <template id="story_firstmeet">
+    <div class="mprose font-body">
+      <p><b>Pattom.</b> Even now, the word feels cinematic.</p>
+      <p>Your violin classes. Me waiting outside like patience was a job I’d finally learned to do well.</p>
+      <p>You walking out, light on your feet, violin case slung over your shoulder — and me stealing that kiss on your cheek.</p>
+      <p>Soft. Electric. Illegal in at least five emotional jurisdictions.</p>
+      <p>That moment didn’t pass. It stayed.</p>
+    </div>
+</template>
+
+  <template id="story_rides">
+    <div class="mprose font-body">
+      <p>Scooter rides that had no destination and therefore meant everything.</p>
+      <p>Dropping you at college before work, then waiting behind the gates on the bike, pretending time didn’t exist.</p>
+      <p>Just sitting there. Talking. Sometimes not talking at all.</p>
+      <p>Those were not “dates.” They were <b>belonging</b>.</p>
+      <p>The kind of ordinary happiness people spend lifetimes chasing.</p>
+    </div>
+</template>
+
+  <template id="story_regret">
+    <div class="mprose font-body">
+      <p>I regret nothing the way I regret losing you.</p>
+      <p>Even if we never put the blame into words, I know it leaned my way. I should have cherished you harder. I should have protected what we had with more care.</p>
+      <p>I held a diamond and treated it like it would never slip.</p>
+      <p>Amal hit the lottery the year I ran out of luck — moving in with you, marrying you, building a life with you.</p>
+      <p>That truth stings. But it’s real.</p>
+    </div>
+</template>
+
+  <template id="story_today">
+    <div class="mprose font-body">
+      <p>You might wonder why I’m saying all this now.</p>
+      <p>Because you still don’t seem to grasp the truth: <b>you are precious</b>. In ways that are rare. In ways that don’t repeat.</p>
+      <p>You’re also — and this is important — <b>so damn hot</b> that global warming should probably issue you a citation.</p>
+      <p>Yes, I said it. Repeatedly. On purpose.</p>
+    </div>
+</template>
+
+  <template id="story_promise">
+    <div class="mprose font-body">
+      <p>I tried running. Even ran all the way to Australia in my head.</p>
+      <p>Turns out distance doesn’t erase understanding.</p>
+      <p>I need you in my life — not as a claim, not as a demand — but as a presence.</p>
+      <p>You’ll pass your exams. You’ll get the job. You’ll be the independent, stunning working woman you already are.</p>
+      <p>All I want is your happiness. Until then, I’ll show up how I know how — care, support, generosity — without conditions.</p>
+    </div>
+</template>
+
+  <!-- Modal -->
+  <div class="modalBack" id="modalBack" aria-hidden="true"></div>
+  <div class="modal" id="modalSheet" role="dialog" aria-modal="true" aria-label="Story popup">
+    <div class="grab" aria-hidden="true"></div>
+    <h4 class="font-head" id="modalTitle">—</h4>
+    <div id="modalBody"></div>
+    <div class="btns" style="margin-top:12px">
+      <button class="btn primary" id="modalClose">Close</button>
+    </div>
+  </div>
+
+  <!-- Bottom nav -->
+  <div class="bottomnav">
+    <div class="bar">
+      <a class="navitem" href="index.html" aria-label="Home">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10.5 12 4l8 6.5V20a1.7 1.7 0 0 1-1.7 1.7H5.7A1.7 1.7 0 0 1 4 20v-9.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M9.2 21.7v-6.2A1.5 1.5 0 0 1 10.7 14h2.6a1.5 1.5 0 0 1 1.5 1.5v6.2" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Home</span>
+      </a>
+      <a class="navitem active" href="us.html" aria-label="Us">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 3.8h10A2.2 2.2 0 0 1 19.2 6v14A2.2 2.2 0 0 1 17 22.2H7A2.2 2.2 0 0 1 4.8 20V6A2.2 2.2 0 0 1 7 3.8Z" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>Us</span>
+      </a>
+      <a class="navitem" href="compliments.html" aria-label="Compliments">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l1.4 6.1L20 9.5l-6.1 1.4L12 17l-1.9-6.1L4 9.5l6.6-1.4L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M19 14l.8 3.4L23 18l-3.2.7L19 22l-.8-3.3L15 18l3.2-.6L19 14Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span>Compliments</span>
+      </a>
+      <a class="navitem" href="calendar.html" aria-label="Calendar">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 3.8v2.6M17 3.8v2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M5.4 6.4h13.2A2.2 2.2 0 0 1 20.8 8.6v11A2.2 2.2 0 0 1 18.6 21.8H5.4A2.2 2.2 0 0 1 3.2 19.6v-11A2.2 2.2 0 0 1 5.4 6.4Z" stroke="currentColor" stroke-width="1.6"/><path d="M3.2 10.2h17.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>Calendar</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
